@@ -37,7 +37,9 @@ component: {
    
     testIsolation:true,
 
-    experimentalSessionAndOrigin: true
+    experimentalSessionAndOrigin: true,
+
+    video: true,
     
 
   },

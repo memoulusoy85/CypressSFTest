@@ -69,7 +69,7 @@ describe('Happy_Path Test Suite',()=>{
               //add asin and verify it is added in queue 
               it('Adding ASIN_By_Panel Test and verify It is in Queue', () => {        
 
-                  cy.Add_ASIN_By_Panel(data.asinTestData[0])  // add new asin
+                  cy.Add_ASIN_By_Panel(data.asinTestData[0])  // add new asin  'B08SWCCW28'
 
                   cy.visit('https://paneltest.sellerflash.com/inventory?status=atQueue')
                   cy.wait(4000)
