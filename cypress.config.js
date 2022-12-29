@@ -6,7 +6,9 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
 
 
-  //projectId: "wutvzt",    // github-->CypressDashboard Integration
+  
+
+  projectId: "4w1pmh",     // github-->CypressSFDashboard Integration
 
 // These settings apply everywhere unless overridden
 pageLoadTimeout: 6000,
@@ -31,8 +33,12 @@ component: {
     },
 
 
-    baseUrl:"https://paneltest.sellerflash.com/",
-    testIsolation:	true
+    baseUrl:"https://paneltest.sellerflash.com",
+   
+    testIsolation:true,
+
+    experimentalSessionAndOrigin: true
+    
 
   },
 });

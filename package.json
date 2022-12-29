@@ -159,11 +159,15 @@
     "wrappy": "^1.0.2",
     "verror": "^1.10.0",
     "type-fest": "^0.21.3",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2"  
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    "sfLogin":" npx cypress run --record --key 9badd111-3b5e-4a87-9928-04c888b5b49d cypress/e2e/SmokeTest/loginPageTest.cy.js",
+    "SmokeHappyPathTesting":" npx cypress run --record --key 9badd111-3b5e-4a87-9928-04c888b5b49d cypress/e2e/SmokeTest/smokeTestSuiteAll.cy.js"
+
   },
+  
   "author": "Mehmet",
   "license": "ISC"
 }
