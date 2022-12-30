@@ -39,7 +39,7 @@ component: {
 
     experimentalSessionAndOrigin: true,
 
-    video: true,
+    video: false,
     
 
   },
