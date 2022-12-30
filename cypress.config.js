@@ -40,6 +40,8 @@ component: {
     experimentalSessionAndOrigin: true,
 
     video: false,
+
+    pageLoadTimeout: 9000
     
 
   },
