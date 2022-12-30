@@ -7,10 +7,10 @@ var data=require('../../fixtures/testDataAsin.json')
 
 
 
-describe('Login Page Test',()=>{
+describe('Login Positive Test',()=>{
 
 
-  it('Login Positive Test', () => {
+  it.only('Login Positive Test', () => {
   
       cy.Login_Positive_Scenario()
       
