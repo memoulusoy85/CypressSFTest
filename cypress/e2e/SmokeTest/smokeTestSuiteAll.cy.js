@@ -10,7 +10,7 @@ var data=require('../../fixtures/testDataAsin.json')
 describe('Login Positive Test',()=>{
 
 
-  it.only('Login Positive Test', () => {
+  it('Login Positive Test', () => {
   
       cy.Login_Positive_Scenario()
       
@@ -121,18 +121,18 @@ describe('Happy_Path Test Suite',()=>{
 
       cy.visit('/inventory?status=pendingApproval')
       
-      cy.wait(2000)
+        cy.wait(2000)
 
 
-      cy.get('tbody>tr>td:nth-of-type(4)>div>div:nth-of-type(2)>a').first().then($el=>{
+        cy.get('tbody>tr>td:nth-of-type(4)>div>div:nth-of-type(2)>a').first().then($el=>{
 
-       // cy.wrap($e.text()).as('asin')
+        // cy.wrap($e.text()).as('asin')
 
-       // expect(asin).to.eq("B08ZS8W57M")
+        // expect(asin).to.eq("B08ZS8W57M")
 
-       return $el.text()
+        return $el.text()
 
-      })
+        })
 
         .then(asin=>{
               
@@ -150,23 +150,17 @@ describe('Happy_Path Test Suite',()=>{
               cy.get('[class="p-message-text"]>span').invoke('text').should('eq','0  products found by your filter search...')
 
 
-      })
+        })
       
       
-
-   
-
-    });
+      });
 
 
-    
-  
+        after(() => {
+          // runs once after all tests in the block
 
-  after(() => {
-    // runs once after all tests in the block
-
-    cy.clearCookies()
-  })
+          cy.clearCookies()
+        })
     
     })
 
