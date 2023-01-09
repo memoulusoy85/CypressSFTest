@@ -163,7 +163,12 @@
   },
   "scripts": {
     
+    "start": "my-server -p 3030",
+    "cy:run": "cypress run",
+
+
     "SFLogin":" npx cypress run --browser chrome --record --key 9badd111-3b5e-4a87-9928-04c888b5b49d --spec cypress/e2e/SmokeTest/loginPageTest.cy.js",
+
     "SmokeHappyPathTest":" npx cypress run  --browser chrome --record --key 9badd111-3b5e-4a87-9928-04c888b5b49d  --spec cypress/e2e/SmokeTest/smokeTestSuiteAll.cy.js"
 
   },

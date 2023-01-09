@@ -33,6 +33,8 @@ component: {
     },
 
 
+
+
     //baseUrl:"https://paneltest.sellerflash.com",
    
     testIsolation:true,
@@ -42,6 +44,7 @@ component: {
     video: false,
 
     pageLoadTimeout: 9000
+
     
 
   },
