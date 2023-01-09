@@ -6,7 +6,7 @@ describe('Login page Smoke Test',()=>{
 
 it('Positive testing', () => {
 
-   // cy.Login_Positive_Scenario()
+    cy.Login_Positive_Scenario()
 
    
     
