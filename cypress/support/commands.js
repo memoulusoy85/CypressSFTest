@@ -30,8 +30,9 @@ import {username,password,wrongUsername, wrongPassword  } from '../support/authe
 
 Cypress.Commands.add('Login_Positive_Scenario',()=>{
 
-   // cy.visit('https://paneltest.sellerflash.com/login')
-   cy.visit('/login')
+   // cy.visit('/login')
+
+   cy.visit('https://paneltest.sellerflash.com/login')
     
     cy.get('#username').clear().type(username)
     cy.get('#password').clear().type(password)
@@ -69,8 +70,8 @@ Cypress.Commands.add('Login_Positive_Scenario',()=>{
 
 Cypress.Commands.add('Right_Username_Wrong_Password_Testing',()=>{
 
-    //cy.visit('https://paneltest.sellerflash.com/login')
-    cy.visit('/login')
+    cy.visit('https://paneltest.sellerflash.com/login')
+    //cy.visit('/login')
     
     cy.get('#username').clear().type(username)
     cy.get('#password').clear().type(wrongPassword)
@@ -85,6 +86,7 @@ Cypress.Commands.add('Right_Username_Wrong_Password_Testing',()=>{
 Cypress.Commands.add('Add_ASIN_By_Panel',(asin)=>{    
 
     cy.visit('https://paneltest.sellerflash.com/inventory/new')
+    
    // cy.get('#asinlist').clear().type('B07BTLL99G')
     cy.get('#asinlist').clear().type(asin)
     cy.contains('Add Queue').click()
