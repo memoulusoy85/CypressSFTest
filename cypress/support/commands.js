@@ -32,9 +32,9 @@ Cypress.Commands.add('Login_Positive_Scenario',()=>{
 
    // cy.visit('/login')
 
-   //cy.visit('https://paneltest.sellerflash.com/login')
+   cy.visit('https://paneltest.sellerflash.com/login')
 
-   cy.visit('paneltest.sellerflash.com/login')
+   //cy.visit('paneltest.sellerflash.com/login')
     
     cy.get('#username').clear().type(username)
     cy.get('#password').clear().type(password)
