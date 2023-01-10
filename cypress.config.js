@@ -35,7 +35,7 @@ component: {
 
 
 
-    //baseUrl:"https://paneltest.sellerflash.com",
+    baseUrl:"https://paneltest.sellerflash.com",
    
     testIsolation:true,
 

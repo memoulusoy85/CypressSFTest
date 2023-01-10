@@ -30,9 +30,9 @@ import {username,password,wrongUsername, wrongPassword  } from '../support/authe
 
 Cypress.Commands.add('Login_Positive_Scenario',()=>{
 
-   // cy.visit('/login')
+    cy.visit('/login')
 
-   cy.visit('https://paneltest.sellerflash.com/login')
+   //cy.visit('https://paneltest.sellerflash.com/login')
 
    //cy.visit('paneltest.sellerflash.com/login')
     
@@ -72,8 +72,8 @@ Cypress.Commands.add('Login_Positive_Scenario',()=>{
 
 Cypress.Commands.add('Right_Username_Wrong_Password_Testing',()=>{
 
-    cy.visit('https://paneltest.sellerflash.com/login')
-    //cy.visit('/login')
+    //cy.visit('https://paneltest.sellerflash.com/login')
+    cy.visit('/login')
     
     cy.get('#username').clear().type(username)
     cy.get('#password').clear().type(wrongPassword)
